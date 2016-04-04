@@ -21,6 +21,7 @@ win32-g++* {
 }
 
 CONFIG += depend_includepath c++11
+QMAKE_CXXFLAGS_CXX11 = -std=c++14 -stdlib=libc++
 
 !isEmpty(USE_FHS_PLUGIN_PATH) {
     DEFINES += TILED_PLUGIN_DIR=\\\"$${LIBDIR}/tiled/plugins/\\\"
