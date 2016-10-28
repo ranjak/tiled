@@ -68,7 +68,7 @@ matrix:
       before_install:
         - brew update
         - brew install qt5
-        - then brew link qt5 --force
+        - brew link qt5 --force
       script:
         - qmake
         - make
