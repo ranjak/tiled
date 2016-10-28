@@ -48,6 +48,8 @@ matrix:
         skip_cleanup: true
         provider: script
         script: curl --upload-file $(ls Tiled*.AppImage) https://transfer.sh/Tiled.AppImage
+        on:
+          all_branches: true
     - os: linux
       compiler: clang
       env: QMAKESPEC=linux-clang
