@@ -25,7 +25,7 @@ matrix:
     - os: linux
       compiler: gcc
       before_install:
-        - sudo add-apt-repository --yes ppa:beineri/opt-qt561-trusty
+        - sudo add-apt-repository --yes ppa:beineri/opt-qt562-trusty
         - sudo apt-get update -qq
         - sudo apt-get -y install qt56base binutils zlib1g-dev libqt5opengl5-dev
       script:
